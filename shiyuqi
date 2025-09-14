@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石宇奇 - 羽毛球运动员</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            color: #0066cc;
+            font-size: 2rem;
+            margin-bottom: 5px;
+            transition: color 0.3s;
+        }
+        
+        h1:hover {
+            color: #ff6600;
+        }
+        
+        .player-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .player-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0066cc;
+            margin: 15px 0;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .player-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,102,204,0.3);
+        }
+        
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: #0066cc;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            padding: 3px 0;
+            transition: color 0.3s;
+        }
+        
+        li:hover {
+            color: #0066cc;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        .btn {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #004d99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>石宇奇</h1>
+            <p>中国羽毛球运动员</p>
+        </header>
+        
+        <div class="player-info">
+            <img src="https://img0.baidu.com/it/u=2384951397,1871300410&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="石宇奇" class="player-img" id="playerImage">
+        </div>
+        
+        <button class="btn" onclick="showMessage()">点击了解详情</button>
+        
+        <div class="section">
+            <h2>基本信息</h2>
+            <ul>
+                <li><strong>出生日期：</strong>1996年2月28日</li>
+                <li><strong>出生地：</strong>江苏南通</li>
+                <li><strong>身高：</strong>183cm</li>
+                <li><strong>持拍手：</strong>右手</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>主要成就</h2>
+            <ul>
+                <li>2018年全英羽毛球公开赛男单冠军</li>
+                <li>2018年世界羽联总决赛男单冠军</li>
+                <li>2024年汤姆斯杯冠军成员</li>
+                <li>2025年世界羽毛球锦标赛男单冠军</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>技术特点</h2>
+            <ul>
+                <li>出色的网前技术和手感</li>
+                <li>快速灵活的步法移动</li>
+                <li>强大的进攻能力和杀球威力</li>
+                <li>稳定的心理素质和比赛经验</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>cyy的web全栈开发作业 ---‘石宇奇’ &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // 一些JavaScript交互
+        function showMessage() {
+            alert('石宇奇，拾羽旗');
+        }
+        
+    </script>
+</body>
+</html>
